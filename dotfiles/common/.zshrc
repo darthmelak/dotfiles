@@ -73,7 +73,7 @@ plugins=(
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/.bin:$HOME/.dotfiles/dotgit/bin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
