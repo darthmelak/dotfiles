@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+        echo "USAGE: $0 commit_id > fn.zip"
+        echo "commit_id is the id of the commit you wish to zip changes from"
+        exit 1
+fi
+
+git archive --format=zip HEAD `git diff $1 HEAD --name-only --diff-filter=d`
+
